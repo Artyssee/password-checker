@@ -7,12 +7,15 @@
 	<title>JS password checker</title>
 </head>
 <body>
-	<form action="post">
+	<form class="form">
 		<label for="email">E-mail</label>
 		<input class="email" type="email" name="email">
 		<label for="password">Password</label>
-		<input class="password" type="password" name="password">
+		<input class="password" type="text" name="password">
+		<input class="form-button" type="submit" value="submit">
 	</form>
+	<h6 class="errorheading">Errors found in the password:</h6>
+	<div class="errorcontainer"></div>
 	<script src="index.js"></script>
 </body>
 </html>

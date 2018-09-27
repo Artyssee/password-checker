@@ -1,0 +1,23 @@
+{
+  "name": "password-checker",
+  "version": "1.0.0",
+  "description": "JavaScript password checker",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artyssee/password-checker.git"
+  },
+  "author": "Martijn van Halderen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Artyssee/password-checker/issues"
+  },
+  "homepage": "https://github.com/Artyssee/password-checker#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
