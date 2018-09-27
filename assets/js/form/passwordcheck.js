@@ -1,3 +1,5 @@
+'use strict'
+
 let form = document.querySelector('.form');
 let password = document.querySelector('.password');
 let submitbutton = document.querySelector('.form-button');
