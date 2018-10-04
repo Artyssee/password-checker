@@ -11,7 +11,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('uglify', function() {
-	gulp.src('./assets/js/index.js')
+	gulp.src('./assets/js/**/**.js')
 		.pipe(uglify({
 			ext:{
 				min: '.js',
