@@ -1,7 +1,8 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var nano = require('gulp-cssnano');
-var uglify = require('gulp-minify');
+let gulp = require('gulp');
+let sass = require('gulp-sass');
+let nano = require('gulp-cssnano');
+let concat = require('gulp-concat');
+let uglify = require('gulp-minify');
 
 gulp.task('sass', function() {
 	return gulp.src('./assets/scss/style.scss')
@@ -12,13 +13,14 @@ gulp.task('sass', function() {
 
 gulp.task('uglify', function() {
 	gulp.src('./assets/js/**/**.js')
+		.pipe(concat('passwordchecker.js'))
 		.pipe(uglify({
 			ext:{
 				min: '.js',
 			},
 			noSource: true,
 		}))
-		.pipe(gulp.dest('./dist/assets/js'))
+		.pipe(gulp.dest('./dist/assets/js/form'))
 });
 
 gulp.task('watch', function() {
